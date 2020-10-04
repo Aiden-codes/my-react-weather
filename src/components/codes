@@ -1,0 +1,16 @@
+{Math.round(forecast.list.main.temp)}
+
+
+{forecast.list.weather.main}
+
+{
+                        (forecast.weather[0].main === "Clouds")
+                          ? clouds
+                          : ((forecast.weather[0].main === "Clear")
+                          ? clear
+                          : ((forecast.weather[0].main === "Rain")
+                          ? rain
+                          : ((forecast.weather[0].main === "Snow")
+                          ? snow
+                          : ""
+                          )))}
